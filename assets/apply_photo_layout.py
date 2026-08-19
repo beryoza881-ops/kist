@@ -20,19 +20,26 @@ from sdl_layout import (apply_geometry, emu, BAND_X, BAND_TOP, IMG_DY,
                         TILE_PAD, TILE_GAP, TILE_W, TILE_H, SUBJECTS, ALT, NS_A)
 
 SRC   = os.path.join(ROOT, 'assets', '원본_v4_new_mod.pptx')
-OUT   = os.path.join(ROOT, '자율실험실_SDL_도식_v5-photo_사진버전.pptx')
 PHOTO = os.path.join(ROOT, 'photos')
-PLACE = os.path.join(HERE, 'photo_placeholders')
 EXTS  = ('.jpg', '.jpeg', '.png', '.webp')
 TARGET_AR = TILE_W / TILE_H
 
+# --scenes : 직접 그린 장면 일러스트 12장을 채워 넣은 버전
+MODES = {
+    'photo': (os.path.join(HERE, 'photo_placeholders'),
+              os.path.join(ROOT, '자율실험실_SDL_도식_v5-photo_사진버전.pptx')),
+    'scene': (os.path.join(HERE, 'scene_images'),
+              os.path.join(ROOT, '자율실험실_SDL_도식_v6_장면일러스트.pptx')),
+}
 
-def find_photo(n, i):
+
+def find_photo(n, i, fallback_dir):
+    """photos/ 에 실제 사진이 있으면 그것을, 없으면 fallback(자리표시자 또는 장면 일러스트)."""
     for e in EXTS:
         p = os.path.join(PHOTO, f'box{n}_{i}{e}')
         if os.path.exists(p):
             return p, True
-    return os.path.join(PLACE, f'box{n}_{i}.png'), False
+    return os.path.join(fallback_dir, f'box{n}_{i}.png'), False
 
 
 def center_crop(pic, path):
@@ -65,7 +72,8 @@ def style(pic):
         f'<a:srgbClr val="DDE0E6"/></a:solidFill></a:ln>'))
 
 
-def main():
+def main(mode='photo'):
+    fallback_dir, out_path = MODES[mode]
     prs = Presentation(SRC)
     slide = prs.slides[0]
     apply_geometry(slide)
@@ -74,7 +82,7 @@ def main():
     for n in (1, 2, 3, 4):
         y = emu(BAND_TOP[n] + IMG_DY) + emu(TILE_PAD)
         for i in range(3):
-            path, real = find_photo(n, i + 1)
+            path, real = find_photo(n, i + 1, fallback_dir)
             if not real:
                 missing.append(f'photos/box{n}_{i+1}.jpg  ({SUBJECTS[n][i]})')
             x = BAND_X[n] + emu(TILE_PAD) + i * (TILE_W + emu(TILE_GAP))
@@ -85,13 +93,16 @@ def main():
             center_crop(pic, path)
             style(pic)
 
-    prs.save(OUT)
-    print('saved', os.path.basename(OUT))
-    if missing:
+    prs.save(out_path)
+    print('saved', os.path.basename(out_path))
+    if missing and mode == 'photo':
         print(f'\n자리표시자로 채운 슬롯 {len(missing)}개 (실제 사진을 넣으면 자동 대체):')
         for m in missing:
             print('  -', m)
+    elif missing:
+        print(f'장면 일러스트로 채운 슬롯 {len(missing)}개 '
+              f'(photos/ 에 사진을 넣으면 그 칸만 사진으로 대체됩니다)')
 
 
 if __name__ == '__main__':
-    main()
+    main('scene' if '--scenes' in sys.argv else 'photo')
