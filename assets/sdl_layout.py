@@ -24,18 +24,45 @@ TILE_W = (IMG_W_EMU - 2 * emu(TILE_PAD) - 2 * emu(TILE_GAP)) // 3     # 766584 E
 TILE_H = emu(IMG_H) - 2 * emu(TILE_PAD)                               # 530352 EMU
 
 # 각 박스의 'ex.' 항목 = 사진 3장의 피사체
-SUBJECTS = {
-    1: ['AI 추천엔진', '과거 실험 DB', '가상실험 모델'],
-    2: ['로봇팔', '액체 핸들러', '측정장비'],
-    3: ['측정데이터 분석', '목표충족 자동판정', '시각화 대시보드'],
-    4: ['모델 재학습', '파인튜닝 파이프라인', '다음조건·종료 결정'],
+#   (한글 라벨, 영문 검색어, 실제로 어떤 사진인지, 사진 난이도)
+#   난이도 easy=실물이라 바로 찾힘 / mid=화면·장면 사진이면 됨 / hard=사진으로 표현 불가에 가까움
+SLOTS = {
+    1: [('AI 추천엔진', 'machine learning code screen',
+         '모니터에 데이터 분석·코드 화면이 떠 있는 연구자 책상', 'hard'),
+        ('과거 실험 DB', 'server rack data center',
+         '서버랙이 늘어선 데이터센터 통로', 'easy'),
+        ('가상실험 모델', 'molecular model chemistry',
+         '공-막대 분자 모형 실물, 또는 분자 3D 렌더링 화면', 'mid')],
+    2: [('로봇팔', 'laboratory robot arm',
+         '실험실 로봇 암(로봇 팔) 실물', 'easy'),
+        ('액체 핸들러', 'pipetting robot 96 well plate',
+         '자동 피펫팅 장비. 없으면 멀티채널 피펫으로 96웰 플레이트에 분주하는 손', 'easy'),
+        ('측정장비', 'mass spectrometer',
+         '질량분석기·HPLC 등 분석기기 실물', 'easy')],
+    3: [('측정데이터 분석', 'scientific data graph monitor',
+         '스펙트럼·크로마토그램 같은 그래프가 떠 있는 모니터', 'mid'),
+        ('목표충족 자동판정', 'quality control inspection lab',
+         '품질검사 장면 또는 합격/불합격 표시가 있는 검사 화면', 'hard'),
+        ('시각화 대시보드', 'analytics dashboard screen',
+         '차트가 여러 개 배치된 대시보드 모니터', 'easy')],
+    4: [('모델 재학습', 'gpu server rack',
+         'GPU가 꽂힌 서버 내부, 또는 서버랙 클로즈업', 'easy'),
+        ('파인튜닝 파이프라인', 'python code editor screen',
+         '코드 에디터 화면 클로즈업', 'hard'),
+        ('다음조건·종료 결정', 'scientists discussing results',
+         '연구자들이 결과를 보며 논의·검토하는 장면', 'mid')],
 }
+SUBJECTS = {n: [s[0] for s in v] for n, v in SLOTS.items()}
+KEYWORDS = {n: [s[1] for s in v] for n, v in SLOTS.items()}
+
 ALT = {
     1: 'AI 실험 설계 예시: AI 추천엔진 · 과거 실험 데이터베이스 · 가상실험 모델',
     2: '로봇·장비 실험 수행 예시: 로봇팔 · 액체 핸들러 · 측정장비',
     3: 'AI·분석SW 결과분석 예시: 측정데이터 분석 · 목표 충족여부 자동판정 · 결과 시각화 대시보드',
     4: 'AI 모델 갱신 예시: 모델 재학습 · 파인튜닝 파이프라인 · 다음 실험조건 또는 종료 결정',
 }
+CARD_TITLE = {1: 'AI 실험 설계', 2: '로봇·장비 실험 수행',
+              3: 'AI·분석SW의 결과분석', 4: 'AI 모델 갱신'}
 
 # ---- 도형 id -> (새 y, 새 높이) ; None 이면 변경 없음 ----
 LAYOUT = {

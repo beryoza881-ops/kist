@@ -1,25 +1,29 @@
 # -*- coding: utf-8 -*-
-"""사진 버전용 자리표시자(placeholder) 타일 생성.
+"""사진 버전용 자리표시자 타일 생성.
 
-photos/box{n}_{1..3}.jpg 가 아직 없을 때 들어갈 '여기에 사진' 타일을 만든다.
-실제 사진을 넣으면 자리표시자는 자동으로 대체된다.
+각 타일에 '넣어야 할 파일명 + 피사체 + 검색어'를 직접 찍어 넣어서,
+PPT를 확대하기만 하면 어느 칸에 무엇을 넣어야 하는지 바로 보이게 한다.
 """
 import os, sys
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from sdl_layout import SUBJECTS, TILE_W, TILE_H
+from sdl_layout import SLOTS, TILE_W, TILE_H
+from _draw_util import font, tw, wrap, center
 
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'photo_placeholders')
 os.makedirs(OUT, exist_ok=True)
 
 W = 1200
-H = int(round(W * TILE_H / TILE_W))          # 타일 비율(약 3:2)에 정확히 맞춤
-BG, EDGE, GLYPH, TXT = (233, 237, 244), (166, 184, 216), (143, 163, 196), (78, 94, 124)
-FONT = '/usr/share/fonts/truetype/nanum/NanumGothicBold.ttf'
+H = int(round(W * TILE_H / TILE_W))
+BG, EDGE, GLYPH = (233, 237, 244), (166, 184, 216), (150, 169, 201)
+NAVY, TXT, SUB = (29, 53, 103), (52, 66, 92), (105, 122, 152)
+DIFF = {'easy': ((214, 240, 226), (26, 108, 70), '사진 찾기 쉬움'),
+        'mid':  ((219, 231, 250), (25, 72, 150), '화면·장면 사진'),
+        'hard': ((253, 232, 213), (162, 84, 12), '사진 부적합 · 일러스트 권장')}
 
 
-def dashed_rect(d, box, color, width, dash=26, gap=18, r=26):
+def dashed(d, box, color, width, dash=26, gap=18, r=26):
     x0, y0, x1, y1 = box
     for x in range(x0 + r, x1 - r, dash + gap):
         xe = min(x + dash, x1 - r)
@@ -31,35 +35,47 @@ def dashed_rect(d, box, color, width, dash=26, gap=18, r=26):
         d.line([(x1, y), (x1, ye)], fill=color, width=width)
 
 
-def tile(label, idx):
+def tile(fname, label, keyword, difficulty):
     im = Image.new('RGB', (W, H), BG)
     d = ImageDraw.Draw(im)
-    dashed_rect(d, (14, 14, W - 15, H - 15), EDGE, 5)
+    dashed(d, (14, 14, W - 15, H - 15), EDGE, 5)
 
-    # 사진 아이콘 (산 + 해)
-    cx, cy, w, h = W // 2, int(H * 0.40), 300, 210
-    fx, fy = cx - w // 2, cy - h // 2
-    d.rounded_rectangle([fx, fy, fx + w, fy + h], radius=18, outline=GLYPH, width=9)
-    d.ellipse([fx + 42, fy + 36, fx + 92, fy + 86], fill=GLYPH)
-    d.polygon([(fx + 26, fy + h - 26), (fx + 120, fy + 74), (fx + 196, fy + h - 26)], fill=GLYPH)
-    d.polygon([(fx + 150, fy + h - 26), (fx + 214, fy + 104), (fx + w - 26, fy + h - 26)], fill=GLYPH)
+    f_file = font(58, True)
+    pw = tw(d, fname, f_file) + 76
+    d.rounded_rectangle([(W - pw) // 2, 36, (W + pw) // 2, 132], radius=48, fill=NAVY)
+    center(d, W // 2, 56, fname, f_file, (255, 255, 255))
 
-    f_lab = ImageFont.truetype(FONT, 76)
-    f_num = ImageFont.truetype(FONT, 60)
-    tw = d.textbbox((0, 0), label, font=f_lab)[2]
-    while tw > W - 90 and f_lab.size > 40:
-        f_lab = ImageFont.truetype(FONT, f_lab.size - 4)
-        tw = d.textbbox((0, 0), label, font=f_lab)[2]
-    d.text(((W - tw) // 2, int(H * 0.68)), label, font=f_lab, fill=TXT)
-    d.ellipse([30, 30, 104, 104], fill=(29, 53, 103))
-    nw = d.textbbox((0, 0), str(idx), font=f_num)
-    d.text((67 - (nw[2] - nw[0]) / 2, 67 - (nw[3] + nw[1]) / 2), str(idx), font=f_num, fill=(255, 255, 255))
+    # 사진 아이콘
+    gw, gh, gy = 230, 160, 180
+    gx = (W - gw) // 2
+    d.rounded_rectangle([gx, gy, gx + gw, gy + gh], radius=16, outline=GLYPH, width=8)
+    d.ellipse([gx + 32, gy + 26, gx + 74, gy + 68], fill=GLYPH)
+    d.polygon([(gx + 20, gy + gh - 20), (gx + 92, gy + 56), (gx + 150, gy + gh - 20)], fill=GLYPH)
+    d.polygon([(gx + 116, gy + gh - 20), (gx + 164, gy + 80), (gx + gw - 20, gy + gh - 20)], fill=GLYPH)
+
+    f_lab = font(70, True)
+    while tw(d, label, f_lab) > W - 80 and f_lab.size > 44:
+        f_lab = font(f_lab.size - 4, True)
+    center(d, W // 2, 380, label, f_lab, TXT)
+
+    f_kw = font(44)
+    y = 470
+    for ln in wrap(d, '검색어  ' + keyword, f_kw, W - 160):
+        center(d, W // 2, y, ln, f_kw, SUB)
+        y += 58
+
+    bg, fg, txt = DIFF[difficulty]
+    f_d = font(40, True)
+    cw = tw(d, txt, f_d) + 56
+    y = H - 108
+    d.rounded_rectangle([(W - cw) // 2, y, (W + cw) // 2, y + 66], radius=33, fill=bg)
+    center(d, W // 2, y + 12, txt, f_d, fg)
     return im
 
 
 if __name__ == '__main__':
-    for n, labels in SUBJECTS.items():
-        for i, lab in enumerate(labels, 1):
-            p = os.path.join(OUT, f'box{n}_{i}.png')
-            tile(lab, i).save(p)
-            print(p)
+    for n, slots in SLOTS.items():
+        for i, (label, kw, _desc, diff) in enumerate(slots, 1):
+            fname = f'box{n}_{i}.jpg'
+            tile(fname, label, kw, diff).save(os.path.join(OUT, f'box{n}_{i}.png'))
+            print(fname, '->', diff)

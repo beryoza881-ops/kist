@@ -16,7 +16,15 @@
 > Wikimedia Commons·Unsplash·Pexels·Pixabay 등 모든 이미지 호스트를 차단하고 있어
 > 사진을 내려받을 수 없었습니다. `photos/` 에 사진 12장을 넣고
 > `python3 assets/apply_photo_layout.py` 를 실행하면 완성됩니다.
-> (넣는 방법과 규격은 `photos/README.md` 참고)
+>
+> **→ 먼저 `사진_넣는_안내표.png` 를 보세요.** 12칸 각각에 대해
+> 파일명 / 실제로 무엇이 찍힌 사진이어야 하는지 / 검색어 / 사진 난이도를 정리했습니다.
+> PPTX 안의 자리표시자에도 같은 내용이 찍혀 있어, 확대하면 어느 칸에 무엇을
+> 넣는지 바로 보입니다.
+>
+> 12칸 중 `box1_1`(AI 추천엔진) · `box3_2`(목표충족 자동판정) · `box4_2`(파인튜닝 파이프라인)은
+> **실물이 없는 개념이라 사진으로 표현이 안 됩니다.** 이 3칸만 일러스트를 쓰는
+> 혼합안을 권합니다.
 
 ## 산출물
 
@@ -25,12 +33,14 @@
 | `자율실험실_SDL_도식_v5_예시이미지.pptx` | 일러스트 버전 (완성) |
 | `자율실험실_SDL_도식_v5-photo_사진버전.pptx` | 사진 버전 (사진 대기) |
 | `preview.jpg` / `preview_photo.jpg` | 각 버전 렌더링 미리보기 |
+| `사진_넣는_안내표.png` | **12칸 대응표** — 파일명·피사체·검색어·난이도 (사진 버전 필독) |
 | `photos/` | 사진 넣는 곳 + 파일명·규격·라이선스 안내 |
 | `assets/원본_v4_new_mod.pptx` | 입력 원본 |
 | `assets/sdl_layout.py` | 공통 레이아웃 좌표 테이블 (두 빌드 스크립트가 공유) |
 | `assets/make_example_images.py` | 일러스트(SVG→PNG) 생성 |
 | `assets/apply_layout.py` | 일러스트 버전 빌드 |
-| `assets/make_photo_placeholders.py` | 사진 자리표시자 타일 생성 |
+| `assets/make_photo_placeholders.py` | 사진 자리표시자 타일 생성 (파일명·검색어 각인) |
+| `assets/make_photo_guide.py` | 사진 넣는 안내표 생성 |
 | `assets/apply_photo_layout.py` | 사진 버전 빌드 (크롭·모서리·테두리 포함) |
 
 ## 각 박스에 들어가는 예시
@@ -82,6 +92,7 @@ python3 assets/make_example_images.py
 python3 assets/apply_layout.py
 
 # 버전 B (사진) — photos/ 에 사진을 넣은 뒤
-python3 assets/make_photo_placeholders.py   # 최초 1회 (자리표시자)
+python3 assets/make_photo_placeholders.py   # 자리표시자 타일
+python3 assets/make_photo_guide.py          # 사진 넣는 안내표
 python3 assets/apply_photo_layout.py
 ```
