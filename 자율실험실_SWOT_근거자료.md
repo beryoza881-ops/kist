@@ -66,6 +66,49 @@ SWOT 각 항목에 인용할 수 있는 통계·수치·출처를 정리했습�
 
 > ⚠️ **첨단바이오 “증가율 1위·2위·3위” 인용 시 주의.** 이 세 수치는 독립적으로 확인하지 못했습니다(원문 PDF 접근 차단). 더 중요한 점은, **KISTI가 2026년 발표한 분석은 상반돼 보이는 그림**(바이오 특허 세계 5위이나 건당 질적 영향력은 21위)을 제시한다는 것입니다. 두 지표는 서로 다른 것을 재는 것이므로(**증가율·성장세** vs **절대 순위·질적 영향력**) 충돌이 아니지만, 검토자가 “질적 영향력 21위인데 논문 영향력 3위?”라고 반문할 수 있습니다. → **증가율 지표임을 문장에 명시**하고, 원문 PDF에서 정확한 기준(대상 기간·지표 정의)을 확인해 각주에 함께 적으시길 권합니다.
 
+
+### S-1 대안. 도메인 연구 분야의 역량 (연구실적 기준)
+
+> 「반도체·배터리·화학 **제조** 경쟁력」 대신 「도메인 **연구** 역량」으로 서술하실 때 쓰는 표입니다.
+> 산업 지표(시장점유율·생산능력)가 아니라 **논문·특허 실적**으로만 구성했습니다.
+
+**① 도메인별 연구실적**
+
+| 도메인 | 연구실적 지표 | 순위·수치 | 출처 | 링크 |
+|---|---|---|---|---|
+| **소재·나노** | SCI 논문 (재료과학) | **세계 4위** (22개 분야 중, 2022) | 과기정통부·NRF 과학기술논문 발표 현황 | [지표누리](https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1533) |
+| | 피인용 상위 1% 논문 (재료과학) | **세계 4위** (2013~2023) | 한국연구재단 | [대학지성](https://www.unipress.co.kr/news/articleView.html?idxno=13333) |
+| | 나노기술 SCI 논문 | **세계 4위** (9,815건, 점유율 5.5%, 2020) | 국가나노기술정책센터 | [NNPC](https://www.nnpc.re.kr/bbs/board.php?bo_table=04_03_03&wr_id=31) |
+| | 나노기술 USPTO 등록특허 | **세계 3위** (1,143건, 7.4%) · 증가율 7.2% > 세계평균 5.8% | 동일 | 동일 |
+| | 기술수준 (미국 대비) | (’20) 80.8% → (’22) **83.3%** | KISTEP 2022 기술수준평가 | [KISTEP](https://www.kistep.re.kr/reportDetail.es?mid=a10305020000&rpt_tp=831-006&rpt_no=RES0220240079) |
+| **화학·촉매** | SCI 논문 (화학) | **세계 7위** (2022) · 6위 (2021) | 과기정통부·NRF | [지표누리](https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1533) |
+| | 피인용 상위 1% 논문 (화학) | **세계 6위** (2013~2023) | 한국연구재단 | [대학지성](https://www.unipress.co.kr/news/articleView.html?idxno=13333) |
+| **이차전지** | 기술수준평가 | (’22) **세계 1위** — 12대 분야 중 한국이 유일하게 1위였던 분야 | KISTEP | [한국일보](https://www.hankookilbo.com/news/article/amp/A2026022210540000916) |
+| | 전고체전지 특허 출원 증가율 | **세계 2위** (연평균 18%) · 누적 출원 **3위**(5,770건) | 특허청·SNE리서치 (2026.2) | [한국경제](https://www.hankyung.com/article/2026022376141) |
+| **첨단바이오** | 바이오의약품 제조(CMO) 역량 | **세계 2위** | 「첨단바이오 이니셔티브」 (2024.4.25) | [정책브리핑](https://www.korea.kr/news/policyNewsView.do?newsId=148932073) |
+| | 바이오기업 특허 출원·등록 | **세계 5위** (질적 영향력은 21위) | KISTI (2026) | [KISTI](https://www.kisti.re.kr/promote/post/news/7043) |
+| **반도체** | 기술수준 (2024) | **91.2%** — 12대 국가전략기술 중 최상위 | KISTEP 2024 기술수준평가 | [ScienceON](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202500001818) |
+| | 학술논문 경쟁력 | “연구 규모·수준은 성장하나 **선도국과 큰 격차**, 기초·원천 투자 시급” | KISTI 「학술논문 데이터로 본 글로벌 반도체 기술패권 경쟁」 | [국회 국가전략포털](http://nsp.nanet.go.kr/plan/subject/detail.do?nationalPlanControlNo=PLAN0000034552) |
+| **공통/전분야** | 세부 중점기술별 상위 논문·특허 | 12대 분야 중 8개 분야 27개 세부기술 분석 (Dimensions 기반) | KISTI R&D Brief 2023-2호 「국가 전략기술분야 글로벌 상위 논문·특허 분석」 | [BioIN](https://www.bioin.or.kr/board.do?num=320529&cmd=view&bid=patent) |
+
+**② 전체 연구역량 지표 (도입 문장용)**
+
+| 지표 | 수치 | 출처 | 링크 |
+|---|---|---|---|
+| **Nature Index** | **세계 7위** (2025, 전년 대비 4.1% 증가, 캐나다 추월) | Nature Index 2025 | [Nature Index](https://www.nature.com/nature-index/research-leaders/2025/institution/all/all/countries-South%20Korea) · [위즈뉴스](https://www.wiznews.co.kr/news/articleView.html?idxno=11965) |
+| **SCI 논문 수** | **76,100편, 세계 12위** (2022, 세계 점유율 3.34%) | 과기정통부·NRF | [지표누리](https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1533) |
+| **논문 질적 수준(FWCI)** | **1.10** — 세계 평균보다 10% 더 인용됨 (2018~2022, 469,921편, 13위) · FWCI 성장률 **세계 3위**(연 1.4%) · 27개 분야 중 20개 분야 FWCI 상승, **에너지 분야 성장률 최고**(연 4.0%) | Elsevier Korea Country Report | [뉴스와이어](https://www.newswire.co.kr/newsRead.php?no=977039) · [대학지성](http://www.unipress.co.kr/news/articleView.html?idxno=9345) |
+| **피인용 상위 1% 논문** | **세계 14위**, 점유율 **3.8%** (7,790건, 2013~2023) — 미국 40.1% / 중국 32.9% | 한국연구재단 | [대학지성](https://www.unipress.co.kr/news/articleView.html?idxno=13333) |
+
+> ⭐ **가장 강력한 한 문장 — 한국연구재단 원문 표현**
+> “**재료과학·컴퓨터과학·화학 등은 분야 내 전체 논문 점유율보다 피인용 상위 1% 논문 점유율이 더 높아, 양 대비 질적으로 우수한 논문을 발간**하는 것으로 나타났다.”
+> → SDL의 주 적용 분야인 소재·화학이 **양이 아니라 질에서도 강하다**는 근거. “도메인 연구 분야의 역량 보유”를 한 줄로 입증합니다.
+
+> ⚠️ **주의 — 같은 자료에 T 소재가 섞여 있습니다.** 피인용 상위 1% 논문 **전체 순위는 7년째 14위로 정체**돼 있습니다. S에 쓸 때는 반드시 **분야별 순위(재료과학 4위·화학 6위)**를 쓰시고 전체 순위는 피하시거나, T-1에서 “분야 강점은 있으나 국가 전체 질적 도약은 정체”로 대비시켜 쓰십시오. → [헤럴드경제 사설](https://biz.heraldcorp.com/article/10599622)
+
+**💡 문장 예시**
+> “우리나라는 자율실험실의 주 적용 도메인에서 이미 세계적 연구역량을 보유하고 있다. 재료과학은 SCI 논문 수·피인용 상위 1% 논문 모두 **세계 4위**, 화학은 각각 7위·6위이며, 나노기술은 SCI 논문 세계 4위·USPTO 등록특허 세계 3위다. 이차전지는 2022년 기술수준평가에서 12대 국가전략기술 중 **유일하게 세계 1위**로 평가됐고, 첨단바이오는 바이오의약품 제조역량 세계 2위·특허 출원 세계 5위다. 특히 재료과학과 화학은 전체 논문 점유율보다 피인용 상위 1% 논문 점유율이 더 높아 **양 대비 질적으로 우수**하다는 것이 한국연구재단의 평가다.”
+
 ---
 
 ### S-2. 자동화·자율화 사례의 축적
@@ -245,6 +288,8 @@ SWOT 각 항목에 인용할 수 있는 통계·수치·출처를 정리했습�
 | 첨단바이오 “특허 증가율 1위 / 논문 증가율 2위 / 논문 영향력 3위” | **독립 확인 실패** (원문 PDF 접근 차단). 지표 정의·대상 기간 확인 필요 | [「첨단바이오 이니셔티브」 원문 PDF](https://www.pacst.go.kr/jsp/initiative/bio_initiative_intro.pdf) 직접 확인 |
 | 소재·나노 80.8%→83.3% | 분야별 세부 수치는 검색 요약으로 확인 불가. **종합 수치(80.1%→81.5%)는 확인됨** | [KISTEP 2022 기술수준평가](https://www.kistep.re.kr/reportDetail.es?mid=a10305020000&rpt_tp=831-006&rpt_no=RES0220240079) 본문의 분야별 표 확인 |
 | 2024년 종합 기술수준 82.7% vs 82.8% | 두 값이 혼용됨. **82.8% = 136개 핵심기술 / 82.7% = 50개 국가전략기술**로 구분됨을 확인 | [PACST 2024 결과(안)](https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1421) |
+| 피인용 상위 1% 분야별 순위 | 컴퓨터과학이 자료에 따라 **8위/9위**로 상이. 재료과학 4위·화학 6위는 복수 자료 일치 | [한국연구재단 원문 보고서](https://www.unipress.co.kr/news/articleView.html?idxno=13333) 확인 |
+| 촉매 단독 분야 연구실적 | **분야별 통계 없음** (화학·화학공학에 포함되어 집계) | 화학 분야 지표로 대체하거나 Scopus/WoS에서 직접 집계 |
 | 이차전지 수출액 | 2025년 품목별 수출 통계에서 별도 확인 필요 | [산업통상부 수출입 동향](https://www.motir.go.kr/kor/article/ATCL8764a1224/155119048/view) |
 | RSC 논문 본문 | 네트워크 제약으로 본문 미확인. **초록·검색 요약 기준** | [RSC](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00024j) 또는 [ResearchGate](https://www.researchgate.net/publication/402663741_Self-driving_laboratories_in_Korea_a_new_era_of_autonomous_discovery) |
 
