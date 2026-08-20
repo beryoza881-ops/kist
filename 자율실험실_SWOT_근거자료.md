@@ -33,6 +33,39 @@ SWOT 각 항목에 인용할 수 있는 통계·수치·출처를 정리했습�
 - *Digital Discovery* (RSC, 2026), **"Self-driving laboratories in Korea: a new era of autonomous discovery"** — 초록에 "Korea offers a particularly strong foundation for SDL adoption, supported by **globally competitive industries in semiconductors, batteries, and chemical manufacturing**"이라고 명시. **S-1과 S-2를 한 문헌으로 동시에 뒷받침 가능.**
   → [RSC 링크](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00024j) · [ResearchGate PDF](https://www.researchgate.net/publication/402663741_Self-driving_laboratories_in_Korea_a_new_era_of_autonomous_discovery)
 
+
+### S-1 보강. 분야별 기술수준 지표 (KISTEP 기술수준평가)
+
+> 「기술수준평가」는 2년 주기로 **11대 분야 136개 국가적 핵심기술** + **50개 국가전략기술**에 대해 한·중·일·EU·미 5개국의 기술수준(%)과 기술격차(년)를 델파이 조사로 평가합니다. 분야별 순위·수준을 인용할 때 가장 표준적인 출처입니다.
+
+| 구분 | 수치 | 기준 | 링크 |
+|---|---|---|---|
+| **소재·나노 분야** | **(’20) 80.8% → (’22) 83.3%** 로 향상 (미국 대비) | 2022년 기술수준평가, KISTEP | [KISTEP 2022 기술수준평가](https://www.kistep.re.kr/reportDetail.es?mid=a10305020000&rpt_tp=831-006&rpt_no=RES0220240079) · [PACST 결과(안)](https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1139) · [ScienceON](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202300003562) |
+| **한국 종합 기술수준 추이** | (’18) 76.9% → (’20) 80.1% → (’22) 81.5% → (’24) **82.8%** · 기술격차 3.8년→3.3년→3.2년→**2.8년** | 기술수준평가 (136개 기술) | [2020 보고서](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202100009192) · [2024 보고서](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202500001818) |
+| **2022년 5개국 순위** | 미국 100% > EU 94.7% > 일본 86.4% > 중국 82.6% > **한국 81.5%** | 2022년 기술수준평가 | [KISTEP InI](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11959063) |
+| **2024년 50개 국가전략기술 순위** | 미국 100% > 중국 91.3% > EU 90.5% > 일본 84.9% > **한국 82.7%** · 미국 도달 소요 한국 2.6년 / 중국 1.4년 | 2024년 기술수준평가 | [PACST 결과(안)](https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1421) · [원문 뷰어](https://online.fliphtml5.com/lukuo/yjnc/) |
+| **2024년 분야별 수준** | 반도체·디스플레이 **91.2%** · 차세대통신 **87.0%** · AI **80.6%** · 양자 **67.8%** · 우주항공·해양 **59.3%** | 2024년 기술수준평가 | [ScienceON](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202500001818) · [K2Base](https://www.k2base.re.kr/techLevelEval/list.do) |
+| **첨단바이오 분야** | 미국 대비 **75~82.5%**, 기술격차 **2~4.5년** (국가전략기술별) | 2022년 기술수준평가 | [BICS](https://www.bics.re.kr/sdp/tech/read/94) |
+| **이차전지 분야** | (’22) **한국이 유일하게 세계 1위** — 중국과 0.9년 격차 → (’24) 중국 1위, 한국 0.2년 열위 | 기술수준평가 | [한국일보](https://www.hankookilbo.com/news/article/amp/A2026022210540000916) · [국민일보](https://www.kmib.co.kr/article/view.asp?arcid=1771747152) |
+
+> 💡 **S와 T를 함께 쓰는 법**: 소재·나노 80.8%→83.3%, 이차전지 ’22년 세계 1위는 **강점(S)**, 그 이차전지 1위를 2년 만에 중국에 내준 것은 **위기(T)**입니다. 같은 출처(기술수준평가)로 두 항목을 대칭적으로 쓸 수 있어 논리가 깔끔해집니다.
+
+### S-1 보강. 논문·특허 지표
+
+| 분야 | 지표 | 수치 | 출처 | 링크 |
+|---|---|---|---|---|
+| **첨단바이오** | 특허 증가율 / 논문 증가율 / 논문 영향력 | **세계 1위 / 2위 / 3위** ← *사용자 제시 수치. 출처 확인 필요 (아래 주의 참조)* | 「첨단바이오 이니셔티브」(2024.4.25) 추정 | [PACST 원문 PDF](https://www.pacst.go.kr/jsp/initiative/bio_initiative_intro.pdf) · [PACST 첨단바이오](https://www.pacst.go.kr/jsp/initiative/bio_initiative.jsp) |
+| **첨단바이오** | 바이오의약품 제조(CMO) 역량 | **세계 2위** | 「첨단바이오 이니셔티브」 (2024.4.25) | [정책브리핑](https://www.korea.kr/news/policyNewsView.do?newsId=148932073) · [뉴스1](https://www.news1.kr/it-science/general-science/5396941) |
+| **바이오** | 바이오기업 특허 출원·등록 | **세계 5위** (양적) — 단 **질적 영향력(건당 피인용)은 21위**, 양적 영향력 8위 | KISTI 글로벌 바이오기업 분석 (2026) | [KISTI](https://www.kisti.re.kr/promote/post/news/7043) · [서울신문](https://www.seoul.co.kr/news/society/science-news/2026/07/15/20260715500130) |
+| **소재·나노** | 나노기술 SCI 논문 | **세계 4위** (2020, 9,815건, 점유율 5.5%) — 1위 중국 73,776건, 2위 미국 24,286건 | 국가나노기술정책센터 「나노기술 논문 현황 보고서」 | [NNPC 보고서(2014-2023)](https://www.nnpc.re.kr/bbs/board.php?bo_table=04_03_03&wr_id=31) · [NNPC 통계](https://www.nnpc.re.kr/sub/sub04_03_02_03.php) |
+| **소재·나노** | 나노기술 USPTO 등록특허 | **세계 3위** (2020, 1,143건, 7.4%) · 연평균 증가율 **7.2%**로 세계 평균(5.8%) 상회 | 동일 | 동일 |
+| **소재·화학** | SCI 논문 수 분야별 순위 | **재료과학 4위 · 공학 5위 · 화학 7위** (2022, 총 76,100편 세계 12위) | 과기정통부·KISTEP 「한국의 과학기술논문 발표 및 인용 현황」 | [지표누리](https://www.index.go.kr/unity/potal/main/EachDtlPageDetail.do?idx_cd=1533) · [KISTEP 통계](https://www.kistep.re.kr/sts/statsMenuList.do) |
+| **소재·화학** | 피인용 상위 1% 논문 | **재료과학 4위 · 화학 6위** (전체는 14위, 점유율 3.8%, 2013~2023) — “양 대비 질적으로 우수” | 동일 | [대학지성](https://www.unipress.co.kr/news/articleView.html?idxno=13333) |
+| **이차전지** | 전고체전지 특허 출원 증가율 | **세계 2위** (연평균 18%, 중국 33.6% 다음) · 누적 출원 3위(5,770건, 일본 9,881 / 중국 6,749 다음) | 특허청·SNE리서치 (2026.2) | [한국경제](https://www.hankyung.com/article/2026022376141) · [SNE리서치](https://www.sneresearch.com/kr/insight/special_view/271/page/0) |
+| **이차전지·반도체** | 국가핵심기술 특허출원 증가율 | 평균 **13.6%** 급증 (이차전지·반도체·디지털통신 중심) | 특허청 보도자료 | [특허청](https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&ntatcSeq=19863&aprchId=BUT0000029&sysCd=SCD02) |
+
+> ⚠️ **첨단바이오 “증가율 1위·2위·3위” 인용 시 주의.** 이 세 수치는 독립적으로 확인하지 못했습니다(원문 PDF 접근 차단). 더 중요한 점은, **KISTI가 2026년 발표한 분석은 상반돼 보이는 그림**(바이오 특허 세계 5위이나 건당 질적 영향력은 21위)을 제시한다는 것입니다. 두 지표는 서로 다른 것을 재는 것이므로(**증가율·성장세** vs **절대 순위·질적 영향력**) 충돌이 아니지만, 검토자가 “질적 영향력 21위인데 논문 영향력 3위?”라고 반문할 수 있습니다. → **증가율 지표임을 문장에 명시**하고, 원문 PDF에서 정확한 기준(대상 기간·지표 정의)을 확인해 각주에 함께 적으시길 권합니다.
+
 ---
 
 ### S-2. 자동화·자율화 사례의 축적
@@ -159,6 +192,18 @@ SWOT 각 항목에 인용할 수 있는 통계·수치·출처를 정리했습�
 | **중국의 추월** | AI반도체 韓 84.1 vs 中 88.3, 전력반도체 67.5 vs 79.8, 차세대 센싱 81.3 vs 83.9 (2022년 평가는 한국 우위 → 2년 만에 역전) | KISTEP 2024 기술수준평가 | [글로벌이코노믹](https://www.g-enews.com/article/Industry/2025/02/202502231842524392056c162803_1) |
 | **Global AI Index** | 한국 **6위, 27.26점** (미국 100점 기준) | KISTEP 브리프 「2024년 The Global AI Index 결과 분석」 | [KISTEP](https://kistep.re.kr/board.es?act=view&bid=0031&list_no=93845&mid=a10306010000) |
 
+**②-2 중국에 의한 역전 — 2024년 기술수준평가 (T-1에서 가장 강한 근거)**
+
+| 지표 | 수치 | 링크 |
+|---|---|---|
+| **한국이 중국보다 앞선 국가전략기술 수** | (’22) **17개** → (’24) **6개** — 2년 만에 11개 상실 (50개 중) | [한국일보](https://www.hankookilbo.com/news/article/amp/A2026022210540000916) · [한국경제](https://www.hankyung.com/article/2026022264921) |
+| **136개 핵심기술 종합** | 한국 **82.8%** vs 중국 **86.8%** — 한국이 **4.0%p 열위** · 미국 도달 소요 한국 2.8년 / 중국 2.1년 | [국민일보](https://www.kmib.co.kr/article/view.asp?arcid=1771747152) · [PACST](https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1421) |
+| **이차전지** | (’22) 한국 **유일한 세계 1위**(중국과 0.9년 격차) → (’24) **중국 1위**, 한국 0.2년 열위 | [한국일보](https://www.hankookilbo.com/news/article/amp/A2026022210540000916) |
+| **반도체·디스플레이** | 기술수준 한국 **91.2%** vs 중국 **91.5%** — 순위 역전 (기술격차는 한국 0.7년 / 중국 0.8년) | [한국일보](https://www.hankookilbo.com/news/article/amp/A2026022210540000916) |
+| **반도체 세부기술** | AI반도체 韓 84.1 vs 中 88.3 · 전력반도체 67.5 vs 79.8 · 차세대 센싱 81.3 vs 83.9 | [글로벌이코노믹](https://www.g-enews.com/article/Industry/2025/02/202502231842524392056c162803_1) |
+
+> 💡 **SWOT 연결**: S-1에서 인용하는 “이차전지 세계 1위·소재나노 기술수준 향상”은 **2022년 기준**입니다. 2024년 평가에서 이차전지 1위를 중국에 내주고 우위 기술이 17개→6개로 줄었다는 사실을 T-1에 넣으면, “산업 기반은 강하나 그 우위가 빠르게 침식되고 있으므로 자율실험실을 통한 R&D 속도 확보가 시급하다”는 **보고서 전체의 논지**가 완성됩니다.
+
 **③ 데이터 자산 격차 (SDL의 핵심 연료)**
 
 | DB | 규모 | 링크 |
@@ -197,6 +242,9 @@ SWOT 각 항목에 인용할 수 있는 통계·수치·출처를 정리했습�
 | 전담운영인력 통계 | **2015년 실태조사** 자료로 다소 오래됨 | 「국가연구시설장비 관리·활용 실태조사」 최신판 또는 NFEC 통계 확인 → [NFEC](https://www.nfec.go.kr/nfec/sub01_02.do?partCode=04view) · [ZEUS](https://www.zeus.go.kr/zeusBI) |
 | 연구데이터 등록·공유율 | 국가 단위 등록률·공유율 통계를 찾지 못함. **W-2 보강용으로 유용** | KISTI DataON, 「국가연구개발사업 성과분석」 확인 → [ScienceON](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202400000524) |
 | 자율실험실 관련 국내 연구자 대상 설문 | 현재 인용 가능한 것은 **제약·바이오 분야 55명 표본** 설문뿐 (표본이 작고 분야 한정) | 소재·화학 분야 설문이 있으면 병기 권장. KISTEP 이슈페이퍼 목록 확인 → [KISTEP 이슈페이퍼](https://www.kistep.re.kr/menu.es?mid=a10306020000) |
+| 첨단바이오 “특허 증가율 1위 / 논문 증가율 2위 / 논문 영향력 3위” | **독립 확인 실패** (원문 PDF 접근 차단). 지표 정의·대상 기간 확인 필요 | [「첨단바이오 이니셔티브」 원문 PDF](https://www.pacst.go.kr/jsp/initiative/bio_initiative_intro.pdf) 직접 확인 |
+| 소재·나노 80.8%→83.3% | 분야별 세부 수치는 검색 요약으로 확인 불가. **종합 수치(80.1%→81.5%)는 확인됨** | [KISTEP 2022 기술수준평가](https://www.kistep.re.kr/reportDetail.es?mid=a10305020000&rpt_tp=831-006&rpt_no=RES0220240079) 본문의 분야별 표 확인 |
+| 2024년 종합 기술수준 82.7% vs 82.8% | 두 값이 혼용됨. **82.8% = 136개 핵심기술 / 82.7% = 50개 국가전략기술**로 구분됨을 확인 | [PACST 2024 결과(안)](https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1421) |
 | 이차전지 수출액 | 2025년 품목별 수출 통계에서 별도 확인 필요 | [산업통상부 수출입 동향](https://www.motir.go.kr/kor/article/ATCL8764a1224/155119048/view) |
 | RSC 논문 본문 | 네트워크 제약으로 본문 미확인. **초록·검색 요약 기준** | [RSC](https://pubs.rsc.org/en/content/articlelanding/2026/dd/d6dd00024j) 또는 [ResearchGate](https://www.researchgate.net/publication/402663741_Self-driving_laboratories_in_Korea_a_new_era_of_autonomous_discovery) |
 
