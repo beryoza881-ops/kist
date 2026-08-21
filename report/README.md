@@ -1,13 +1,15 @@
 # 국내 자율실험실(SDL) 현황 보고서 — 사례 중심
 
-기준일 2026년 8월. 대학·출연(연) 편과 기업 편 두 권으로 구성했다.
+기준일 2026년 8월. 국내 두 권(대학·출연연 / 기업)과 해외 한 권으로 구성했다.
 
 | 파일 | 설명 |
 |---|---|
-| `국내_자율실험실_현황_사례중심.docx` | **① 대학·출연(연) 편** (Word, A4 2페이지) |
-| `국내_자율실험실_현황_기업편.docx` | **② 기업 편** (Word, A4 2페이지) |
-| `국내_자율실험실_현황_*.pdf` | 레이아웃 확인용 PDF |
-| `build_report.js` / `build_report_company.js` | 각 문서 생성 스크립트 (docx-js) |
+| `국내_자율실험실_현황_사례중심.docx` | **① 국내 대학·출연(연) 편** (Word, A4 2페이지) |
+| `국내_자율실험실_현황_기업편.docx` | **② 국내 기업 편** (Word, A4 2페이지) |
+| `해외_자율실험실_대표사례.docx` | **③ 해외 편** (Word, A4 2페이지) |
+| `*.pdf` | 레이아웃 확인용 PDF |
+| `build_report*.js` | 각 문서 생성 스크립트 (docx-js) |
+| `VERIFICATION.md` | 수치·사실 전수 검증 기록 |
 
 ## 공통 구성
 
@@ -36,6 +38,14 @@
   파크시스템스/에이치비솔루션/로봇앤드디자인 · 롯데정밀화학
 - 출처 37건 (표 2는 7건)
 
+## ③ 해외 편 수록 사례
+
+- **표 1 (13건)** 리버풀대 Mobile Robotic Chemist · 버클리연구소 A-Lab · CMU Coscientist ·
+  토론토대 Acceleration Consortium · 아르곤 Polybot · NC State Rainbow · 중국과기대 로봇 AI 화학자 ·
+  NIMS-OS · RIKEN Mahoro · Chemify · Insilico Life Star · Lila Sciences · Periodic Labs
+- **표 2 (3건)** DeepMind GNoME · Berkeley Lab Materials Project · Emerald Cloud Lab
+- 출처 29건 (Nature·Nature Synthesis 등 원논문 우선)
+
 ## 자율실험 정도 척도
 
 | 표기 | 의미 |
@@ -48,8 +58,9 @@
 
 ```bash
 npm install docx
-node build_report.js          # ① 대학·출연(연) 편
-node build_report_company.js  # ② 기업 편
+node build_report.js          # ① 국내 대학·출연(연) 편
+node build_report_company.js  # ② 국내 기업 편
+node build_report_global.js   # ③ 해외 편
 ```
 
 모든 사례·수치는 공개 보도자료 및 기관·기업 발표 내용을 인용했으며, 인용 위치마다 출처 하이퍼링크가
