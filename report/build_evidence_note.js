@@ -35,6 +35,25 @@ const S = {
   slasnew:{ url: 'https://www.selectscience.net/product-news/ansi-accredits-new-slas-microplate-standard-for-well-bottom-elevation/?artID=26395',
             t: 'SelectScience, "ANSI accredits new SLAS microplate standard for well-bottom elevation"' },
   slas:   { url: 'https://www.slas.org/education/ansi-slas-microplate-standards/', t: 'SLAS, ANSI/SLAS 마이크로플레이트 표준' },
+  kiria:  { url: 'https://www.kiria.org/portal/policysut/portalPlcyInquiry.do',
+            t: '한국로봇산업진흥원, 로봇산업 실태조사(2006년부터 매년 실시되는 정부승인통계)' },
+  cobot:  { url: 'https://www.newspost.kr/news/articleView.html?idxno=213502',
+            t: '뉴스포스트, "두산로보틱스, 중복 상장 속 AI·가격 경쟁력 우려"(협동로봇 점유율)' },
+  cobot2: { url: 'https://www.news2day.co.kr/article/20230707500185',
+            t: '뉴스투데이, "12조원 협동로봇 시장 놓고 \'다윗\' 레인보우로보틱스, \'골리앗\' 두산에 도전장"' },
+  lhmkt:  { url: 'https://www.globenewswire.com/news-release/2026/07/10/3325342/0/en/south-korea-automated-liquid-handling-system-market-report-published-breaks-down-demand-across-drug-discovery-genomic-research-and-clinical-diagnostics.html',
+            t: 'GlobeNewswire, "South Korea Automated Liquid Handling System Market Report"(2026.7)' },
+  labmkt: { url: 'https://www.marketresearchfuture.com/reports/south-korea-laboratory-automation-market-50056',
+            t: 'MRFR, "South Korea Laboratory Automation Market"' },
+  top5:   { url: 'https://www.rootsanalysis.com/key-insights/top-automated-liquid-handlers-manufacturing-companies.html',
+            t: 'Roots Analysis, "Top 5 Manufacturers of Automated Liquid Handlers"' },
+  bioin:  { url: 'https://www.ibric.org/bric/trend/bio-report.do?articleNo=8693867',
+            t: 'BRIC Bio리포트, "바이오산업 소부장 국내현황 및 경쟁력과 발전 방향"' },
+  nistp:  { url: 'https://www.sciencedirect.com/science/article/abs/pii/S2590238526001190',
+            t: 'H. Joress et al., "Toward a composable, modular laboratory ecosystem for autonomous materials R&D", Matter(2026)' },
+  lads:   { url: 'https://reference.opcfoundation.org/specs/OPC-30500-1/1', t: 'OPC Foundation, OPC UA for LADS Part 1(OPC 30500-1)' },
+  sila:   { url: 'https://sila-standard.com/faq/', t: 'SiLA Standard FAQ — SiLA 2 개요' },
+  emmc:   { url: 'https://emmc.eu/focus-areas/digitalisation-interoperability/', t: 'EMMC, Digitalisation & Interoperability(EMMO 기반 소재 온톨로지)' },
   hk:     { url: 'https://www.hankyung.com/article/2023082171811',
             t: '한국경제, "장비 공짜로 줄게…계약 물량까지 뺏는 외국계 바이오"(2023.8)' },
 };
@@ -170,6 +189,53 @@ c.push(box('권장 처리', [
 ], BADFILL, RED));
 
 // ⑥
+c.push(h('⑥ 계층별 국내 역량 — 부품은 있는데 시스템이 없다', GREEN));
+c.push(para('“자율실험실에 들어가는 자동화 장비”만 따로 집계한 통계는 없다. 이유는 두 가지다. 첫째, {nistp:NIST가 자율실험실을 “상용 기성품(COTS) 부품으로 조립 가능한 모듈형 생태계”로 정의}하듯 자율실험실은 새 장비를 만드는 것이 아니라 **기성 장비를 엮는 것**이라 별도 품목이 성립하지 않는다. 둘째, KSIC·HS코드와 국가연구시설장비 분류체계에 해당 품목 자체가 없다.'));
+c.push(para('그래서 계층을 나눠 보면 국내 역량의 분포가 드러난다.'));
+c.push(dataTable([2300, 1500, 6518], ['계층', '국내 역량', '근거'], [
+  ['로봇팔(협동로봇)', '**있음**', '{kiria:로봇산업 실태조사}는 2006년부터 매년 나오는 정부승인통계다. 한국의 로봇밀도는 **1,012대로 세계 최고 수준**이고, {cobot:두산로보틱스는 중국을 제외한 글로벌 시장 4위권이면서 국내 1위}다({cobot2:글로벌 1위는 덴마크 유니버설로봇})'],
+  ['리퀴드핸들러', '**1개사**', '{top5:글로벌 상위 5개사(Agilent·Beckman Coulter·Eppendorf·Hamilton·Thermo Fisher)가 모두 외산}. {sisa:국내에서는 2021년 설립된 에이블랩스가 “유일하게 액체 핸들링 자동화 로봇을 만들었다”}고 밝힌다. 국산·외산 분리 점유율 통계는 없다'],
+  ['분석장비', '거의 없음', '{hd90:마이크로플레이트 리더·오실로스코프·스펙트럼 분석기 외산 비중 100%}. {bioin:바이오 분야는 수요기업의 90% 이상이 해외 소부장에 의존}'],
+  ['연결 규격·소프트웨어', '**지분 없음**', '장비 통신은 {lads:OPC UA LADS}(독일 주도)와 {sila:SiLA 2}, 데이터는 Allotrope·AnIML, 소재 온톨로지는 {emmc:EU의 EMMO}가 쥐고 있다. 한국은 {zdnet:2026년 8월에야 협의체 「기술·플랫폼·표준」 분과를 출범}시켰다'],
+]));
+c.push(quote('세계 최고 로봇밀도에 협동로봇 국내 1위 기업까지 있는 나라가, 그 로봇을 자국 실험장비에 붙여 쓰는 자율실험실은 만들지 못하고 있다. **부품이 없어서가 아니라, 부품을 엮는 규격과 소프트웨어가 전부 밖에 있기 때문이다.**'));
+c.push(box('주의 — “로봇팔도 외산”이라고 쓰면 안 된다', [
+  '두산로보틱스·레인보우로보틱스·뉴로메카가 있고 **국내 협동로봇 시장 1위는 두산로보틱스**다. ' +
+  '“장비가 다 외산”이라고 뭉뚱그리면 이 대목에서 반박당하고, 그 순간 문단 전체의 신뢰가 흔들린다. ' +
+  '오히려 **“부품은 있는데 시스템이 없다”** 로 써야 논지가 강해진다.',
+], WARNFILL, ORANGE));
+
+c.push(h('⑦ 바로 쓸 수 있는 문장 — “외산 벤더 장비·시스템 의존, 생태계 고착화 우려”', NAVY));
+c.push(para('아래 문장은 위 근거를 그대로 반영해 작성했다. 밑줄 친 부분에 출처 링크가 걸려 있다.', 14));
+
+c.push(new Paragraph({ spacing: { before: 160, after: 50 }, children: [new TextRun({ text: '의존의 실태', bold: true, size: 16, color: NAVY, font: KO })] }));
+[
+  '국내 연구실의 기본 연구장비는 **90% 이상이 수입품**이며, {hd90:마이크로플레이트 리더·오실로스코프·스펙트럼 분석기는 외산 비중이 100%}다.',
+  '바이오 분야는 {bioin:수요기업의 90% 이상이 해외 소부장에 의존}하고 있다.',
+  '실험 자동화의 핵심인 자동분주기(리퀴드핸들러)는 {top5:글로벌 상위 5개사가 모두 외산}이며, {sisa:국내에서는 2021년 설립된 1개사가 유일한 제조사}다.',
+].forEach((t, i) => c.push(new Paragraph({ spacing: { before: 30, after: 30, line: 215, lineRule: 'auto' }, indent: { left: 300, hanging: 240 },
+  children: [new TextRun({ text: `${i + 1}. `, size: 16, bold: true, color: NAVY, font: KO }), ...runs(t, { size: 16 })] })));
+
+c.push(new Paragraph({ spacing: { before: 150, after: 50 }, children: [new TextRun({ text: '고착화가 일어나는 구조 — 핵심', bold: true, size: 16, color: NAVY, font: KO })] }));
+[
+  '자율실험실은 새 장비를 만드는 것이 아니라 기성 장비를 엮는 것이다. {nistp:미국 NIST는 자율실험실 생태계를 “상용 기성품(COTS) 부품으로 조립 가능한 모듈형 구조”로 정의}한다. 따라서 경쟁력은 개별 장비가 아니라 **장비를 잇는 규격과 소프트웨어**에서 결정된다.',
+  '그런데 그 규격은 전부 국외에서 정해진다. 장비 통신은 {lads:독일 주도의 OPC UA LADS}와 {sila:SiLA 2}, 데이터는 제약업계 컨소시엄의 Allotrope·AnIML, 소재 온톨로지는 {emmc:EU의 EMMO}가 쥐고 있다. 한국은 {zdnet:2026년 8월에야 「기술·플랫폼·표준」 분과를 출범}시켰다.',
+  '소프트웨어는 장비에 묶여 들어온다. 분석 소프트웨어는 장비를 사면 따라오는 구조여서 장비 점유율이 곧 소프트웨어 점유율이 된다. 여기에 {hk:외국계 기업은 장비를 무상 제공하는 대신 5~10년간 소모품 구매를 조건으로 거는 영업 방식}을 쓴다. 한 번 들어온 벤더는 장비·소프트웨어·소모품을 함께 묶어 교체 비용을 키운다.',
+].forEach((t, i) => c.push(new Paragraph({ spacing: { before: 30, after: 30, line: 215, lineRule: 'auto' }, indent: { left: 300, hanging: 240 },
+  children: [new TextRun({ text: `${i + 4}. `, size: 16, bold: true, color: NAVY, font: KO }), ...runs(t, { size: 16 })] })));
+
+c.push(new Paragraph({ spacing: { before: 150, after: 50 }, children: [new TextRun({ text: '고착화의 결과', bold: true, size: 16, color: NAVY, font: KO })] }));
+[
+  '{eco:국내 바이오장비 개발률은 36.4%인데 연구현장의 국산 장비 실제 도입률은 1%}에 그친다. 만들 수 있는데도 쓰이지 않는다는 뜻이며, 이는 개별 장비의 성능 문제가 아니라 **기존 시스템에 붙지 못하는 연결의 문제**다.',
+  '역설적으로 한국은 부품 역량이 없는 나라가 아니다. {kiria:로봇밀도는 1,012대로 세계 최고 수준}이고 {cobot:협동로봇에서는 국내 기업이 글로벌 4위권}에 있다. 그럼에도 그 로봇을 자국 실험장비에 붙여 쓰는 자율실험실은 만들지 못하고 있다. **부품이 없어서가 아니라, 부품을 엮는 규격과 소프트웨어가 모두 밖에 있기 때문이다.**',
+].forEach((t, i) => c.push(new Paragraph({ spacing: { before: 30, after: 30, line: 215, lineRule: 'auto' }, indent: { left: 300, hanging: 240 },
+  children: [new TextRun({ text: `${i + 7}. `, size: 16, bold: true, color: NAVY, font: KO }), ...runs(t, { size: 16 })] })));
+
+c.push(new Paragraph({ spacing: { before: 150, after: 50 }, children: [new TextRun({ text: '왜 지금이 분기점인가', bold: true, size: 16, color: NAVY, font: KO })] }));
+c.push(new Paragraph({ spacing: { before: 30, after: 30, line: 215, lineRule: 'auto' }, indent: { left: 300, hanging: 240 },
+  children: [new TextRun({ text: '9. ', size: 16, bold: true, color: NAVY, font: KO }),
+    ...runs('자율실험실 시장은 이제 형성되는 중이다. {labmkt:한국 실험실 자동화 시장은 2024년 약 1억 2,575만 달러} 규모이고, {lhmkt:자동분주기 시장은 2025년 2,350만 달러에서 2036년 5,100만 달러로 성장}할 전망이다. **지금 표준과 시스템 계층을 확보하지 못하면, 지금의 장비 의존이 자율실험실 시대의 시스템 의존으로 그대로 이월된다.**', { size: 16 })] }));
+
 c.push(h('⑥ 보너스 — 문안에 없지만 쓸 만한 근거', GREEN));
 c.push(dataTable([2600, 7718], ['자료', '내용'], [
   ['{hk:한국경제(2023.8)}', '외국계 기업이 **장비를 무상 제공하는 대신 5~10년간 소모품 구매를 조건**으로 거는 영업 전략. “왜 국산으로 바꾸지 못하는가”를 설명하는 구조적 요인(lock-in)으로, 종속 논지에 직결된다'],
