@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="452" viewBox="0 0 1120 452" font-family="'Malgun Gothic','맑은 고딕','Noto Sans KR',AppleGothic,sans-serif">
+  <rect width="1120" height="452" fill="#ffffff"/>
+
+  <!-- ===== Row A : 자율실험 폐루프 ===== -->
+  <text x="20" y="34" font-size="15" font-weight="700" fill="#1a1a1a">자율실험 폐루프</text>
+  <text x="20" y="56" font-size="12.5" fill="#666">(실험의 4단계)</text>
+
+  <g stroke="#5b6b7c" stroke-width="1.4" fill="#eef2f6">
+    <rect x="300" y="70" width="181" height="64" rx="4"/>
+    <rect x="506" y="70" width="181" height="64" rx="4"/>
+    <rect x="712" y="70" width="181" height="64" rx="4"/>
+    <rect x="918" y="70" width="181" height="64" rx="4"/>
+  </g>
+  <g font-size="14.5" font-weight="700" fill="#1a2b3c" text-anchor="middle">
+    <text x="390" y="98">① 실험 설계</text>
+    <text x="596" y="98">② 실험 수행</text>
+    <text x="802" y="98">③ 측정·분석</text>
+    <text x="1008" y="98">④ 데이터·지식화</text>
+  </g>
+  <g font-size="12" fill="#5a6a78" text-anchor="middle">
+    <text x="390" y="119">AI 조건 탐색</text>
+    <text x="596" y="119">로봇·장비 실행</text>
+    <text x="802" y="119">측정·해석</text>
+    <text x="1008" y="119">축적·표준화</text>
+  </g>
+
+  <!-- 진행 화살표 -->
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6b7c"/>
+    </marker>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8a97a4"/>
+    </marker>
+  </defs>
+  <g stroke="#5b6b7c" stroke-width="1.6" marker-end="url(#ar)">
+    <line x1="483" y1="102" x2="503" y2="102"/>
+    <line x1="689" y1="102" x2="709" y2="102"/>
+    <line x1="895" y1="102" x2="915" y2="102"/>
+  </g>
+
+  <!-- 되먹임 경로 -->
+  <path d="M1008,134 L1008,160 L390,160 L390,138" fill="none" stroke="#8a97a4" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arw)"/>
+  <rect x="628" y="150" width="142" height="20" fill="#ffffff"/>
+  <text x="699" y="165" font-size="12" fill="#7c8894" text-anchor="middle">학습 → 다음 실험 재설계</text>
+
+  <!-- ===== Row B : 서비스 유형 ===== -->
+  <line x1="20" y1="186" x2="1100" y2="186" stroke="#d5dce3" stroke-width="1"/>
+  <text x="20" y="212" font-size="15" font-weight="700" fill="#1a1a1a">서비스산업 4대 유형</text>
+  <text x="20" y="232" font-size="12.5" fill="#666">(어느 구간을 서비스로 파는가)</text>
+
+  <!-- ① 장비·모듈 공급형 -->
+  <rect x="506" y="252" width="181" height="40" rx="4" fill="#dbe6f0" stroke="#7b9cbd" stroke-width="1.2"/>
+  <text x="24" y="270" font-size="13.5" font-weight="700" fill="#1a2b3c">① 장비·모듈 공급형</text>
+  <text x="24" y="287" font-size="11.5" fill="#68757f">Ginkgo Bioworks, 에이블랩스, 파크시스템스</text>
+  <text x="596" y="277" font-size="12.5" fill="#2c4a68" text-anchor="middle">자동화 장비·모듈 판매</text>
+
+  <!-- ② 실험대행 서비스형 -->
+  <rect x="506" y="299" width="387" height="40" rx="4" fill="#cfe0ee" stroke="#6b90b5" stroke-width="1.2"/>
+  <text x="24" y="317" font-size="13.5" font-weight="700" fill="#1a2b3c">② 실험대행 서비스형</text>
+  <text x="24" y="334" font-size="11.5" fill="#68757f">Emerald Cloud Lab, Arctoris (클라우드랩·CRO)</text>
+  <text x="699" y="324" font-size="12.5" fill="#2c4a68" text-anchor="middle">원격 의뢰 → 실험 수행·결과 반환</text>
+
+  <!-- ③ 운영SW·데이터 플랫폼형 -->
+  <rect x="506" y="346" width="593" height="40" rx="4" fill="#c2d8ea" stroke="#5c85ad" stroke-width="1.2"/>
+  <text x="24" y="364" font-size="13.5" font-weight="700" fill="#1a2b3c">③ 운영SW·데이터 플랫폼형</text>
+  <text x="24" y="381" font-size="11.5" fill="#68757f">Strateos (고객 시설에 SW 배치)</text>
+  <text x="802" y="371" font-size="12.5" fill="#22415e" text-anchor="middle">실험 스케줄링·데이터 표준화·분석 환경 제공</text>
+
+  <!-- ④ AI 자율발견 통합형 -->
+  <rect x="300" y="393" width="799" height="40" rx="4" fill="#adc9e2" stroke="#4a76a0" stroke-width="1.4"/>
+  <text x="24" y="411" font-size="13.5" font-weight="700" fill="#1a2b3c">④ AI 자율발견 통합형</text>
+  <text x="24" y="428" font-size="11.5" fill="#68757f">Lila Sciences, Periodic Labs, XtalPi, Chemify</text>
+  <text x="699" y="418" font-size="12.5" fill="#1c3a56" text-anchor="middle">전 구간 통합 운영 → 발견 결과(물질·후보물질) 자체를 판매</text>
+
+  <!-- 구간 경계 점선 -->
+  <g stroke="#c8d2db" stroke-width="1" stroke-dasharray="3 4">
+    <line x1="300" y1="244" x2="300" y2="440"/>
+    <line x1="506" y1="244" x2="506" y2="440"/>
+    <line x1="893" y1="244" x2="893" y2="440"/>
+    <line x1="1099" y1="244" x2="1099" y2="440"/>
+  </g>
+</svg>
