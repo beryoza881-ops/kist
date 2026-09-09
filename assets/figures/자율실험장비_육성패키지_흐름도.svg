@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="366" viewBox="0 0 1120 366" font-family="'Malgun Gothic','맑은 고딕','Noto Sans KR',AppleGothic,sans-serif">
+  <rect width="1120" height="366" fill="#ffffff"/>
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6b7c"/>
+    </marker>
+  </defs>
+
+  <text x="21" y="26" font-size="14.5" font-weight="700" fill="#1a1a1a">개발–도입 패키지 지원 5단계</text>
+  <text x="205" y="26" font-size="12.5" fill="#8a97a4">— ②·⑤가 잠금장치(gate). 이 둘이 없으면 ③만 남아 실패</text>
+
+  <!-- 단계 박스 -->
+  <g>
+    <rect x="21" y="46" width="190" height="76" rx="4" fill="#eef2f6" stroke="#5b6b7c" stroke-width="1.3"/>
+    <rect x="243" y="46" width="190" height="76" rx="4" fill="#cfe0ee" stroke="#3d6b96" stroke-width="1.8"/>
+    <rect x="465" y="46" width="190" height="76" rx="4" fill="#eef2f6" stroke="#5b6b7c" stroke-width="1.3"/>
+    <rect x="687" y="46" width="190" height="76" rx="4" fill="#eef2f6" stroke="#5b6b7c" stroke-width="1.3"/>
+    <rect x="909" y="46" width="190" height="76" rx="4" fill="#cfe0ee" stroke="#3d6b96" stroke-width="1.8"/>
+  </g>
+  <g font-size="14" font-weight="700" fill="#1a2b3c" text-anchor="middle">
+    <text x="116" y="76">① 품목 선정</text>
+    <text x="338" y="76">② 수요 확약</text>
+    <text x="560" y="76">③ 개발</text>
+    <text x="782" y="76">④ 실증·검증</text>
+    <text x="1004" y="76">⑤ 도입</text>
+  </g>
+  <g font-size="11.5" fill="#5a6a78" text-anchor="middle">
+    <text x="116" y="97">수요·수입의존도</text>
+    <text x="116" y="113">기술역량·활용성</text>
+    <text x="338" y="97">수요기관 도입확약서</text>
+    <text x="338" y="113">복수 수요처 우대</text>
+    <text x="560" y="97">R&amp;D + 표준 인터페이스</text>
+    <text x="560" y="113">구현 의무화</text>
+    <text x="782" y="97">레퍼런스 SDL 실증</text>
+    <text x="782" y="113">적합성시험·플러그페스트</text>
+    <text x="1004" y="97">혁신제품 지정·시범구매</text>
+    <text x="1004" y="113">수의계약·구매면책</text>
+  </g>
+
+  <g stroke="#5b6b7c" stroke-width="1.6" marker-end="url(#a1)">
+    <line x1="213" y1="84" x2="240" y2="84"/>
+    <line x1="435" y1="84" x2="462" y2="84"/>
+    <line x1="657" y1="84" x2="684" y2="84"/>
+    <line x1="879" y1="84" x2="906" y2="84"/>
+  </g>
+
+  <!-- 잠금장치 표시 -->
+  <g font-size="11" font-weight="700" fill="#2c4a68" text-anchor="middle">
+    <text x="338" y="140">▲ 확약 없으면 ③ 선정 불가</text>
+    <text x="1004" y="140">▲ 표준 미준수 시 혜택 배제</text>
+  </g>
+
+  <!-- 준용 선례 -->
+  <line x1="21" y1="158" x2="1099" y2="158" stroke="#d5dce3" stroke-width="1"/>
+  <text x="21" y="182" font-size="13" font-weight="700" fill="#1a1a1a">준용 선례</text>
+  <g>
+    <rect x="21" y="196" width="190" height="52" rx="4" fill="#f7f9fb" stroke="#c8d2db" stroke-width="1"/>
+    <rect x="243" y="196" width="190" height="52" rx="4" fill="#f7f9fb" stroke="#c8d2db" stroke-width="1"/>
+    <rect x="465" y="196" width="412" height="52" rx="4" fill="#f7f9fb" stroke="#c8d2db" stroke-width="1"/>
+    <rect x="909" y="196" width="190" height="52" rx="4" fill="#f7f9fb" stroke="#c8d2db" stroke-width="1"/>
+  </g>
+  <g font-size="11.5" fill="#41505e" text-anchor="middle">
+    <text x="116" y="218">첨단혁신장비 얼라이언스</text>
+    <text x="116" y="236">범용장비 분과('26.2 신설)</text>
+    <text x="338" y="218">소부장 수요–공급기업</text>
+    <text x="338" y="236">협력모델(승인 시 패키지)</text>
+    <text x="671" y="218">소부장 실증 테스트베드 / OPC·SiLA 적합성 시험·플러그페스트</text>
+    <text x="671" y="236">(개발과 검증을 한 사업 안에서 연결)</text>
+    <text x="1004" y="218">조달청 혁신제품 지정</text>
+    <text x="1004" y="236">·시범구매</text>
+  </g>
+
+  <!-- 서비스 트랙 -->
+  <rect x="465" y="266" width="634" height="46" rx="4" fill="#e6eef6" stroke="#7b9cbd" stroke-width="1.2" stroke-dasharray="6 4"/>
+  <text x="21" y="288" font-size="13" font-weight="700" fill="#1a2b3c">서비스 트랙(병행)</text>
+  <text x="21" y="306" font-size="11.5" fill="#68757f">장비만 지원하면 반쪽</text>
+  <text x="782" y="284" font-size="12" fill="#2c4a68" text-anchor="middle">서비스 사업자는 개발 대신 <tspan font-weight="700">초기 운영비 + 원격서비스 SW</tspan> 지원,</text>
+  <text x="782" y="302" font-size="12" fill="#2c4a68" text-anchor="middle">도입 단계는 <tspan font-weight="700">이용 바우처</tspan>로 대체(데이터바우처 방식 준용)</text>
+
+  <text x="21" y="340" font-size="11.5" fill="#8a97a4">※ 수입의존도 실측(KRISS, '19~'23 구매현황): 마이크로플레이트 리더·오실로스코프·스펙트럼 분석기 외산 100%, 가스크로마토그래피 91.0%</text>
+</svg>
